@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<title>Dalila's Spa</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/navbar.css">
+<style>
+  .bgimg {
+    background-image: url('tile.png');
+    min-height: 100%;
+    background-repeat: repeat;
+  }
+</style>
+
+<body>
+
+  <div class="bgimg w3-display-container w3-text-white">
+    <div class="w3-display-middle w3-jumbo">
+      <p class="blackback w110">Dalila's Spa Boutique</p>
+    </div>
+    <div class="w3-display-topleft w3-container w3-xlarge desktop">
+      <p><button onclick="document.getElementById('skincare').style.display='block'" class="w3-button w3-black">skin
+          care & facials</button></p>
+      <p><button onclick="document.getElementById('massage').style.display='block'"
+          class="w3-button w3-black">massage</button></p>
+      <p><button onclick="document.getElementById('waxing').style.display='block'"
+          class="w3-button w3-black">waxing</button></p>
+      <p><button onclick="document.getElementById('packages').style.display='block'"
+          class="w3-button w3-black">packages</button></p>
+      <p><button onclick="document.getElementById('about').style.display='block'"
+          class="w3-button w3-black">about</button></p>
+      <p><button onclick="document.getElementById('contact').style.display='block'"
+          class="w3-button w3-black">contact</button></p>
+    </div>
+    <div class="mobile">
+      <a href="#main-menu"
+             id="main-menu-toggle"
+             class="menu-toggle"
+             aria-label="Open main menu">
+            <span class="sr-only">Open main menu</span>
+            <span class="fa fa-bars" aria-hidden="true"></span>
+          </a>
+          <nav id="main-menu" class="main-menu" aria-label="Main menu">
+            <a href="#main-menu-toggle"
+               id="main-menu-close"
+               class="menu-close"
+               aria-label="Close main menu">
+              <span class="sr-only">Close main menu</span>
+              <span class="fa fa-times" aria-hidden="true"></span>
+            </a>
+            <ul>
+                <p><button onclick="document.getElementById('skincare').style.display='block';
+                  document.getElementById('main-menu-close').click()" class="w3-button w3-black">skin
+                    care & facials</button></p>
+                <p><button onclick="document.getElementById('massage').style.display='block';
+                document.getElementById('main-menu-close').click()"
+                    class="w3-button w3-black">massage</button></p>
+                <p><button onclick="document.getElementById('waxing').style.display='block';
+                  document.getElementById('main-menu-close').click()"
+                    class="w3-button w3-black">waxing</button></p>
+                <p><button onclick="document.getElementById('packages').style.display='block';
+                  document.getElementById('main-menu-close').click()"
+                    class="w3-button w3-black">packages</button></p>
+                <p><button onclick="document.getElementById('about').style.display='block';
+                  document.getElementById('main-menu-close').click()"
+                    class="w3-button w3-black">about</button></p>
+                <p><button onclick="document.getElementById('contact').style.display='block';
+                  document.getElementById('main-menu-close').click()"
+                    class="w3-button w3-black">contact</button></p>
+            </ul>
+          </nav>
+          <a href="#main-menu-toggle"
+             class="backdrop"
+             tabindex="-1"
+             aria-hidden="true" hidden></a>
+    </div>
+    <div class="w3-display-topright w3-container">
+      <img src="tour.png" style="height: 8rem;">
+    </div>
+    <div class="footer w3-container blackback">
+      <p class="w3-xlarge">Call today to book | 604 726-5311</p>
+      <p class="w3-large">Highgate Mall, Burnaby</p>
+      <p blackback>powered by: <a href="https://angularsolutions.io" target="_blank">Angular Solutions</a></p>
+    </div>
+  </div>
+
+
+
+
+  <!-- facials Modal -->
+  <div id="skincare" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container w3-black w3-display-container">
+        <span onclick="document.getElementById('skincare').style.display='none'"
+          class="w3-button w3-display-topright w3-large">x</span>
+        <h1>Massage</h1>
+      </div>
+      <div class="w3-container">
+        <h5>1/2 hour <b>$2.50</b></h5>
+        <h5>1 hour <b>$3.50</b></h5>
+        <h5>2 hour <b>$1.00</b></h5>
+      </div>
+      <div class="w3-container w3-black">
+        <h1>Waxing</h1>
+      </div>
+      <div class="w3-container">
+        <h5>Eyebrows <b>$8.50</b></h5>
+        <h5>Brazilian <b>$5.50</b></h5>
+        <h5>Veggie Pasta <b>$4.00</b></h5>
+        <h5>Chicken and Potatoes <b>$6.50</b></h5>
+        <h5>Deluxe Burger <b>$5.00</b></h5>
+      </div>
+      <div class="w3-container w3-black">
+        <h1>Facials</h1>
+      </div>
+      <div class="w3-container">
+        <h5>Fruit Salad <b>$2.50</b></h5>
+        <h5>Ice cream <b>$2.00</b></h5>
+        <h5>Chocolate Cake <b>$4.00</b></h5>
+        <h5>Cheese <b>$5.50</b></h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- massage Modal -->
+  <div id="massage" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container w3-black w3-display-container">
+        <span onclick="document.getElementById('massage').style.display='none'"
+          class="w3-button w3-display-topright w3-large">x</span>
+        <h1>Massage</h1>
+      </div>
+      <div class="w3-container">
+        <h5>1/2 hour <b>$2.50</b></h5>
+        <h5>1 hour <b>$3.50</b></h5>
+        <h5>2 hour <b>$1.00</b></h5>
+      </div>
+      <div class="w3-container w3-black">
+        <h1>Waxing</h1>
+      </div>
+      <div class="w3-container">
+        <h5>Eyebrows <b>$8.50</b></h5>
+        <h5>Brazilian <b>$5.50</b></h5>
+        <h5>Veggie Pasta <b>$4.00</b></h5>
+        <h5>Chicken and Potatoes <b>$6.50</b></h5>
+        <h5>Deluxe Burger <b>$5.00</b></h5>
+      </div>
+      <div class="w3-container w3-black">
+        <h1>Facials</h1>
+      </div>
+      <div class="w3-container">
+        <h5>Fruit Salad <b>$2.50</b></h5>
+        <h5>Ice cream <b>$2.00</b></h5>
+        <h5>Chocolate Cake <b>$4.00</b></h5>
+        <h5>Cheese <b>$5.50</b></h5>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- waxing Modal -->
+  <div id="waxing" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container w3-black w3-display-container">
+        <span onclick="document.getElementById('waxing').style.display='none'"
+          class="w3-button w3-display-topright w3-large">x</span>
+        <h1>Massage</h1>
+      </div>
+      <div class="w3-container">
+        <h5>1/2 hour <b>$2.50</b></h5>
+        <h5>1 hour <b>$3.50</b></h5>
+        <h5>2 hour <b>$1.00</b></h5>
+      </div>
+      <div class="w3-container w3-black">
+        <h1>Waxing</h1>
+      </div>
+      <div class="w3-container">
+        <h5>Eyebrows <b>$8.50</b></h5>
+        <h5>Brazilian <b>$5.50</b></h5>
+        <h5>Veggie Pasta <b>$4.00</b></h5>
+        <h5>Chicken and Potatoes <b>$6.50</b></h5>
+        <h5>Deluxe Burger <b>$5.00</b></h5>
+      </div>
+      <div class="w3-container w3-black">
+        <h1>Facials</h1>
+      </div>
+      <div class="w3-container">
+        <h5>Fruit Salad <b>$2.50</b></h5>
+        <h5>Ice cream <b>$2.00</b></h5>
+        <h5>Chocolate Cake <b>$4.00</b></h5>
+        <h5>Cheese <b>$5.50</b></h5>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- About Modal -->
+  <div id="about" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container w3-black w3-display-container">
+        <span onclick="document.getElementById('about').style.display='none'"
+          class="w3-button w3-display-topright w3-large">x</span>
+        <h1>About</h1>
+      </div>
+      <div class="w3-container">
+        <p>It's all about service</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div id="contact" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container w3-black">
+        <span onclick="document.getElementById('contact').style.display='none'"
+          class="w3-button w3-display-topright w3-large">x</span>
+        <h1>Contact</h1>
+      </div>
+      <div class="w3-container">
+        <p>Book an appointment or just get in touch:</p>
+        <form action="php/mail.php" method="POST">
+            <p>Name</p> <input type="text" name="name">
+            <p>Email</p> <input type="text" name="email">
+            <p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
+            <input type="submit" value="Send"><input type="reset" value="Clear">
+            </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
