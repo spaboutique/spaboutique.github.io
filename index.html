@@ -54,18 +54,21 @@
               <span class="fa fa-times" aria-hidden="true"></span>
             </a>
             <ul>
+                <p><button onclick="document.getElementById('facials').style.display='block';
+                  document.getElementById('main-menu-close').click()" 
+                    class="w3-button w3-black"facials</button></p>
                 <p><button onclick="document.getElementById('skincare').style.display='block';
-                  document.getElementById('main-menu-close').click()" class="w3-button w3-black">skin
-                    care & facials</button></p>
+                document.getElementById('main-menu-close').click()"
+                    class="w3-button w3-black">Skincare</button></p>
                 <p><button onclick="document.getElementById('massage').style.display='block';
                 document.getElementById('main-menu-close').click()"
                     class="w3-button w3-black">massage</button></p>
                 <p><button onclick="document.getElementById('waxing').style.display='block';
                   document.getElementById('main-menu-close').click()"
                     class="w3-button w3-black">waxing</button></p>
-                <p><button onclick="document.getElementById('packages').style.display='block';
+                <p><button onclick="document.getElementById('handandfeet').style.display='block';
                   document.getElementById('main-menu-close').click()"
-                    class="w3-button w3-black">packages</button></p>
+                    class="w3-button w3-black">Hand & Feet</button></p>
                 <p><button onclick="document.getElementById('about').style.display='block';
                   document.getElementById('main-menu-close').click()"
                     class="w3-button w3-black">about</button></p>
@@ -92,111 +95,151 @@
 
 
 
-  <!-- facials Modal -->
-  <div id="skincare" class="w3-modal">
-    <div class="w3-modal-content w3-animate-zoom">
-      <div class="w3-container w3-black w3-display-container">
-        <span onclick="document.getElementById('skincare').style.display='none'"
-          class="w3-button w3-display-topright w3-large">x</span>
-        <h1>Massage</h1>
-      </div>
-      <div class="w3-container">
-        <h5>1/2 hour <b>$2.50</b></h5>
-        <h5>1 hour <b>$3.50</b></h5>
-        <h5>2 hour <b>$1.00</b></h5>
-      </div>
-      <div class="w3-container w3-black">
-        <h1>Waxing</h1>
-      </div>
-      <div class="w3-container">
-        <h5>Eyebrows <b>$8.50</b></h5>
-        <h5>Brazilian <b>$5.50</b></h5>
-        <h5>Veggie Pasta <b>$4.00</b></h5>
-        <h5>Chicken and Potatoes <b>$6.50</b></h5>
-        <h5>Deluxe Burger <b>$5.00</b></h5>
-      </div>
-      <div class="w3-container w3-black">
-        <h1>Facials</h1>
-      </div>
-      <div class="w3-container">
-        <h5>Fruit Salad <b>$2.50</b></h5>
-        <h5>Ice cream <b>$2.00</b></h5>
-        <h5>Chocolate Cake <b>$4.00</b></h5>
-        <h5>Cheese <b>$5.50</b></h5>
-      </div>
+
+<!-- facials Modal -->
+<div id="facials" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('facials').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Facials</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Flash <b>$45</b></h5>
+      <h5>Maintenance <b>$75</b></h5>
+      <h5>European <b>$75</b></h5>
+      <h5>Organic <b>$85</b></h5>
+      <h5>Advanced & Clinical <b>$95</b></h5>
+      <h5>Signature <b>$135</b></h5>
+      <h5>Luxury <b>$155-$195</b></h5>
     </div>
   </div>
+</div>
+  
 
-  <!-- massage Modal -->
-  <div id="massage" class="w3-modal">
-    <div class="w3-modal-content w3-animate-zoom">
-      <div class="w3-container w3-black w3-display-container">
-        <span onclick="document.getElementById('massage').style.display='none'"
-          class="w3-button w3-display-topright w3-large">x</span>
-        <h1>Massage</h1>
-      </div>
-      <div class="w3-container">
-        <h5>1/2 hour <b>$2.50</b></h5>
-        <h5>1 hour <b>$3.50</b></h5>
-        <h5>2 hour <b>$1.00</b></h5>
-      </div>
-      <div class="w3-container w3-black">
-        <h1>Waxing</h1>
-      </div>
-      <div class="w3-container">
-        <h5>Eyebrows <b>$8.50</b></h5>
-        <h5>Brazilian <b>$5.50</b></h5>
-        <h5>Veggie Pasta <b>$4.00</b></h5>
-        <h5>Chicken and Potatoes <b>$6.50</b></h5>
-        <h5>Deluxe Burger <b>$5.00</b></h5>
-      </div>
-      <div class="w3-container w3-black">
-        <h1>Facials</h1>
-      </div>
-      <div class="w3-container">
-        <h5>Fruit Salad <b>$2.50</b></h5>
-        <h5>Ice cream <b>$2.00</b></h5>
-        <h5>Chocolate Cake <b>$4.00</b></h5>
-        <h5>Cheese <b>$5.50</b></h5>
-      </div>
+<!-- skincare Modal -->
+<div id="skincare" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('skincare').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Skincare</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Back & Shoulder <b>$45-75</b></h5>
+      <h5>Anti-aging Collagen Eye Treatments <b>$25-45</b></h5>
+      <h5>Makeup Application <b>$30-50</b></h5>
+      <h5>Application & Lesson <b>$65</b></h5>
+      <h5>Application & Makeover <b>$175</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Advanced Skincare Microdermabrasion, Galvanic, AHA & Peel</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Microdermabrasion <b>$75-95</b></h5>
+      <h5>Galvanic <b>$35-65</b></h5>
+      <h5>Glycolic <b>$55-75</b></h5>
+      <h5>AHA/ Peel <b>$75-90</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Body & Skin Treatments</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Body Bliss Exfoliation <b>$55-75</b></h5>
+      <h5>Glow, Glamour, & Silk Therapy <b>$75-95-115</b></h5>
+      <h5>Detox, Mineralization or Cocooning Wrap <b>$85-95-115</b></h5>
     </div>
   </div>
-
-
-  <!-- waxing Modal -->
-  <div id="waxing" class="w3-modal">
-    <div class="w3-modal-content w3-animate-zoom">
-      <div class="w3-container w3-black w3-display-container">
-        <span onclick="document.getElementById('waxing').style.display='none'"
-          class="w3-button w3-display-topright w3-large">x</span>
-        <h1>Massage</h1>
-      </div>
-      <div class="w3-container">
-        <h5>1/2 hour <b>$2.50</b></h5>
-        <h5>1 hour <b>$3.50</b></h5>
-        <h5>2 hour <b>$1.00</b></h5>
-      </div>
-      <div class="w3-container w3-black">
-        <h1>Waxing</h1>
-      </div>
-      <div class="w3-container">
-        <h5>Eyebrows <b>$8.50</b></h5>
-        <h5>Brazilian <b>$5.50</b></h5>
-        <h5>Veggie Pasta <b>$4.00</b></h5>
-        <h5>Chicken and Potatoes <b>$6.50</b></h5>
-        <h5>Deluxe Burger <b>$5.00</b></h5>
-      </div>
-      <div class="w3-container w3-black">
-        <h1>Facials</h1>
-      </div>
-      <div class="w3-container">
-        <h5>Fruit Salad <b>$2.50</b></h5>
-        <h5>Ice cream <b>$2.00</b></h5>
-        <h5>Chocolate Cake <b>$4.00</b></h5>
-        <h5>Cheese <b>$5.50</b></h5>
-      </div>
+</div>  
+  
+  
+<!-- massage Modal -->
+<div id="massage" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('massage').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Spa Massages</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Signature Rebalancing Massage | 90-120 mins <b>$85-165</b></h5>
+      <h5>Warm Stone Massage | 60-90 mins <b>$75-95</b></h5>
+      <h5>Western Thai Massage | 30-60-120 mins <b>$40-65-85</b></h5>
+      <h5>Herbal Compress Massage | 75-90 mins <b>$75-95</b></h5>
+      <h5>Sports Massage | 30-60 mins <b>$40-65</b></h5>
+      <h5>Indian Head Massage | 30-45-60 mins <b>$35-45-60</b></h5>
+      <h5>Ayurvedic Massage | 45-60-90 mins <b>$50-65-95</b></h5>
+      <h5>Chakra Healing Massage | 60-90 mins <b>$75-95</b></h5>
     </div>
   </div>
+</div>
+  
+  
+<!-- waxing Modal -->
+<div id="waxing" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('waxing').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Brows & Lashes</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Lash Tinting <b>$15</b></h5>
+      <h5>Brow Tinting <b>$10</b></h5>
+      <h5>Brow Shaping & Enhancement <b>$20</b></h5>
+      <h5>Brow Shaping & Enhancement <b>$20</b></h5>
+      <h5>Brow Shaping & Enhancement <b>$20</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Face Wax</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Full Face <b>$20+</b></h5>
+      <h5>Face & Neck <b>$25+</b></h5>
+      <h5>Brow Shaping <b>$15+</b></h5>
+      <h5>Brow Maintenance <b>$10</b></h5>
+      <h5>Upper Lip <b>$5+</b></h5>
+      <h5>Brows & Lip <b>$15+</b></h5>
+      <h5>Chin & Lip <b>$10+</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Bikini</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Regular <b>$15-20</b></h5>
+      <h5>French <b>$20-30</b></h5>
+      <h5>Sexy Brazilian <b>$35-55</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Body Wax</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Under arm <b>$10-15</b></h5>
+      <h5>Lower arm <b>$15-25</b></h5>
+      <h5>Full arm <b>$20-35</b></h5>
+      <h5>Half leg <b>$20-30</b></h5>
+      <h5>Full leg <b>$35-55</b></h5>
+      <h5>Back shoulder, chest, or belly <b>$25-45</b></h5>
+      <h5>Hands, Feet, or Toes <b>$5-10</b></h5>
+    </div>
+  </div>
+</div>
+  
+  
+  
+  
+<!-- Hand & Feet Modal -->
+<div id="handandfeet" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('handandfeet').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Spa Massages</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Hand Enhancement <b>$25</b></h5>
+      <h5>Pedicure/ Foot Treatment <b>$75-95</b></h5>
+      <h5>Paraffin for Hand <b>$10</b></h5>
+      <h5>Hand & Feet <b>$15</b></h5>
+      <h5>Thai Signature Foot & Shoulder Reflexology | 30-45-60 mins <b>$25-45-60</b></h5>
+    </div>
+  </div>
+</div>
 
 
 
@@ -209,7 +252,7 @@
         <h1>About</h1>
       </div>
       <div class="w3-container">
-        <p>It's all about service</p>
+        <p>Dalila is a fully licensed, professional Spa Therapist certified in both Paris & Vancouver. An expert in both clinical & holistic treatments, your every need will be catered for during your consultation. Her top priority is to offer you an outstanding experience in a safe & clean environment, working with the highest standards & ethics in the industry.</p>
       </div>
     </div>
   </div>
